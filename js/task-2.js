@@ -8,9 +8,7 @@
 
 function makeArray(firstArray, secondArray, maxLength) {
   const arr = firstArray.concat(secondArray);
-  arr.splice(maxLength);
-
-  return arr;
+  return arr.slice(0, maxLength);
 }
 
 console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3)); // ["Mango", "Poly", "Ajax"]
